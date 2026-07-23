@@ -1,6 +1,7 @@
 class Solution {
 public:
     int maxDigitRange(vector<int>& nums) {
+        // maxDigit
         vector<int> res;
         for(int i=0; i<nums.size(); i++){
             int num = nums[i],maxi=INT_MIN,mini=INT_MAX;
@@ -22,6 +23,6 @@ public:
                sum+=nums[i]; 
             }
         }
-        return sum;
+         return sum;
     }
 };
