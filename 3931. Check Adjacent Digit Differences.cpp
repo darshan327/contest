@@ -5,10 +5,9 @@ using namespace std;
 
 class Solution {
 public:
-    bool isAdjacentDiffAtMostTwo(string s) {
+    bool check(string s) {
         for(int i = 0; i < s.size() - 1; i++) {
-
-            if(abs((s[i] - '0') - (s[i + 1] - '0')) > 2) {
+       if(abs((s[i] - '0') - (s[i + 1] - '0')) > 2) {
                 return false;
             }
 
@@ -25,7 +24,7 @@ int main() {
 
     getline(cin, s);
 
-    bool val = obj.isAdjacentDiffAtMostTwo(s);
+    bool val = obj.check(s);
 
     cout << val << " ";
 
